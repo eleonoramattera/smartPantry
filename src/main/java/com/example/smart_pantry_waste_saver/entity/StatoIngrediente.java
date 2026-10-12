@@ -5,6 +5,7 @@ public enum StatoIngrediente {
     DISPONIBILE("In dispensa"),
     IN_ESAURIMENTO("Quasi finito"),
     CONSUMATO("Consumato"),
+    IN_SCADENZA("In scadenza"),
     SCADUTO("Scaduto e buttato"),
     CONGELATO("In freezer");
 	
