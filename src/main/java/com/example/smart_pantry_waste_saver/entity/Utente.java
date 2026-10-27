@@ -41,6 +41,9 @@ public class Utente {
 
 	@Column(nullable = false, length = 100)
 	private String email;
+	
+	@Column(nullable = false, length = 100)
+	private String username;
 
 	@Column(nullable = false, length = 255)
 	private String password;	
@@ -53,14 +56,14 @@ public class Utente {
 	@Builder.Default
     private List<Ingrediente> prodotti = new ArrayList<>();
 
-	public Utente(String nome, String cognome,  String email, String password, RuoloUtente ruolo) {
+	public Utente(String nome, String cognome, String username,  String email, String password, RuoloUtente ruolo) {
 		super();
 		this.nome = nome;
 		this.cognome = cognome;
+		this.username = username;
 		this.email = email;
 		this.password = password;
 		this.ruolo = ruolo;
 	}
-
 
 }
