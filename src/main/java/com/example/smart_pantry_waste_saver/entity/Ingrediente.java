@@ -36,10 +36,10 @@ public class Ingrediente {
 	@Enumerated(EnumType.STRING)
 	private CategoriaIngrediente categoria; 
 
-    @Column(nullable = false, precision = 10, scale = 3) 
+    @Column(nullable = false) 
 	private Double quantita;
 	
-	@Column(nullable = false, length = 20)
+	@Column(nullable = false, length = 20, name ="unita_misura")
 	@Enumerated(EnumType.STRING)
 	private UnitaMisura unitaMisura; 
 
