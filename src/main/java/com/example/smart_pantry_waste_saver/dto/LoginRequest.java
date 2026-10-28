@@ -1,4 +1,4 @@
-package com.example.smart_pantry_waste_saver.security.dto;
+package com.example.smart_pantry_waste_saver.dto;
 
 public class LoginRequest {
     private String email;
